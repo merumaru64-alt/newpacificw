@@ -1,0 +1,10 @@
+pvp:
+  - 'You lost the fight.'
+  - 'Better luck next time.'
+  - 'You were eliminated.'
+starvation:
+  - 'You forgot to eat.'
+  - 'Hunger got you.'
+fall:
+  - 'Watch your step.'
+  - 'That was a long way down.'

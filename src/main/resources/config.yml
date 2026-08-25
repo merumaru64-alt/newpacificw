@@ -1,0 +1,97 @@
+spawn-protection:
+  duration-seconds: 7
+teleport:
+  cancel-on-move: true
+  countdown-seconds: 10
+  quick-play-countdown-seconds: 5
+  final-effects-duration-seconds: 2
+  sound: UI_BUTTON_CLICK
+  success-sound: BLOCK_FIRE_EXTINGUISH
+  countdown-sound-thresholds: [10, 5, 4, 3, 2, 1]
+  spawn-guard-status-key: spawn.guard
+combattag:
+  duration-seconds: 20
+  send-countdown: true
+  allowed-commands:
+    - ct
+  economy:
+    enabled: true
+    victim-loss-percent: 20.0
+anti-chat:
+  block-repeated-messages: true
+  blocked-patterns:
+    - '(?i)https?://'
+    - '(?i)discord\\.gg'
+    - '(?i)join\\s+now'
+backpack:
+  size-permissions:
+    - 'pacifica.bpsize.1:3'
+    - 'pacifica.bpsize.2:4'
+    - 'pacifica.bpsize.3:5'
+    - 'pacifica.bpsize.4:6'
+    - 'pacifica.bpsize.5:7'
+help:
+  header: '&6&lHelp'
+  pages:
+    1:
+      - '&e/spawn &7- Teleport to spawn.'
+      - '&e/warp &7- Teleport to a random warp.'
+      - '&e/taxi &7- Open the taxi menu.'
+      - '&e/ct &7- Check CombatTag status.'
+protected-items:
+  - CHEST
+  - COMPASS
+  - CLOCK
+taxi-gui:
+  title: '&7&lTaxi'
+  buttons:
+    spawn:
+      slot: 13
+      material: BED
+      name: '&a&lSpawn'
+      lore: '&7Teleport to spawn!'
+    quick-play:
+      slot: 11
+      material: EMERALD
+      name: '&a&lQuick Play'
+      lore: '&7Teleport to a random location!'
+    warps:
+      slot: 31
+      material: ENDER_PEARL
+      name: '&e&lWarps'
+      lore: '&7Browse the warp list!'
+    player:
+      slot: 29
+      material: PLAYER_HEAD
+      name: '&e&lPlayer'
+      lore: '&7Send a teleport request'
+    house:
+      slot: 15
+      material: IRON_DOOR
+      name: '&1House'
+      lore: '&7Travel to one of your houses!'
+trashcan-gui:
+  title: '&7&lTrash Can'
+  deposit-slots: [0, 1, 2, 3, 4, 5, 6, 7, 8, 18, 19, 20, 21, 22, 23, 24, 25, 26, 36, 37, 38, 39, 40, 41, 42]
+  reward-slots: [9, 10, 11, 12, 13, 14, 15, 16, 17, 27, 28, 29, 30, 31, 32, 33, 34, 35, 45, 46, 47, 48, 49, 50, 51]
+  reward-pane:
+    material: BLACK_STAINED_GLASS_PANE
+    name: '&7'
+    sellable-material: GREEN_STAINED_GLASS_PANE
+    reward-name: '&a&lReward: $%value%'
+  buttons:
+    cancel:
+      slot: 44
+      material: REDSTONE
+      name: '&c&lCancel'
+      lore: '&7Return all items!'
+    sell-entire-inventory:
+      slot: 52
+      material: DIAMOND
+      name: '&6&lSell Entire Inventory'
+      lore: '&7Total Value: &a&l$%value%'
+    confirm:
+      slot: 53
+      material: PAPER
+      name: '&a&lConfirm'
+      lore: '&7Total Reward: &a&l$%value%'

@@ -1,0 +1,45 @@
+name: Pacifica-II
+version: 1.21.8
+main: com.districtx.pacifica.PacificaPlugin
+api-version: '1.21'
+author: DistrictX Developers Official
+softdepend:
+  - Vault
+  - Essentials
+  - EssentialsX
+  - Pacifica-Housing
+commands:
+  spawn:
+    description: Teleport to spawn through the taxi system.
+  warp:
+    description: Teleport to a random configured warp.
+  setspawn:
+    description: Set the Pacifica spawn location.
+    permission: pacifica.admin
+  rndmwarpset:
+    description: Create or update a random warp.
+    usage: /rndmwarpset <name>
+    permission: pacifica.admin
+  taxi:
+    description: Open the taxi or link a taxi NPC.
+  trashcan:
+    description: Configure or open a trash can.
+    aliases:
+      - trash
+  tpa:
+    description: Send and manage teleport requests.
+  ct:
+    description: Show your current CombatTag status.
+  diamonds:
+    description: Show your Diamond Currency balance.
+    aliases:
+      - dias
+  admindias:
+    description: Manage a player's Diamond Currency.
+    usage: /admindias <set|give|clear|reset> <player> [amount]
+    permission: pacifica.admindias
+permissions:
+  pacifica.admin:
+    default: op
+  pacifica.admindias:
+    default: op
