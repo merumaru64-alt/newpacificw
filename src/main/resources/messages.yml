@@ -8,7 +8,7 @@ teleport:
   success: '&aTeleport complete.'
   failed: '&cTeleport failed.'
   spawn-success: '&e&lTAXI&8&l> &eThe taxi dropped you off at spawn.'
-  warp-success: '&e&lTAXI&8&l> &eThe taxi dropped you off at %warp%.'
+  warp-success: '&e&lTAXI&8&l> &eThe taxi dropped you off at your destination. (%warp%)'
   player-success: '&e&lTAXI&8&l> &eThe taxi dropped you off at %player% location!'
   house-success: '&e&lTAXI&8&l> &eThe taxi dropped you off at your house.'
 combattag:
